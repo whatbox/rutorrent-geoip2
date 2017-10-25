@@ -8,9 +8,6 @@
  * Author: Nicobubulle (nicobubulle@gmail.com)
  */
 
- theUILang.peerComment 		= "Ajouter un commentaire";
- theUILang.peerCommentLabel	= "Entrer un nouveau commentaire pour le peer";
- theUILang.commentName		= "Commentaire";
  theUILang.countryName		= "Pays";
 
  theUILang.country = new Array();

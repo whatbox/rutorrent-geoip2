@@ -8,9 +8,6 @@
  * Author: Chris Kanatas (ckanatas@gmail.com)
  */
 
- theUILang.peerComment 		= "Προσθήκη σχολίου";
- theUILang.peerCommentLabel	= "Προσθήκη νέου σχολίου για τον χρήστη";
- theUILang.commentName		= "Σχόλιο";
  theUILang.countryName		= "Χώρα";
 
  theUILang.country = new Array();

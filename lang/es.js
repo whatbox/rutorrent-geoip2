@@ -8,9 +8,6 @@
  * Author: 
  */
 
- theUILang.peerComment 		= "Agregar comentario";
- theUILang.peerCommentLabel	= "Ingrese comentario para el peer";
- theUILang.commentName		= "Comentario";
  theUILang.countryName		= "País";
 
  theUILang.country = new Array();

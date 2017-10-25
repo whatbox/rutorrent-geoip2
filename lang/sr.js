@@ -8,9 +8,6 @@
  * Author: Zoltan Csala (zcsala021 at gmail dot com)
  */
 
- theUILang.peerComment 		= "Add comment";
- theUILang.peerCommentLabel	= "Enter new comment for peer";
- theUILang.commentName		= "Comment";
  theUILang.countryName		= "Држава";
 
  theUILang.country = new Array();

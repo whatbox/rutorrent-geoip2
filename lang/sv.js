@@ -8,9 +8,6 @@
  * Author: Magnus Holm (holmen@brasse.se) 
  */
 
- theUILang.peerComment 		= "Lägg till kommentar";
- theUILang.peerCommentLabel	= "Ange ny kommentar för peer";
- theUILang.commentName		= "Kommentar";
  theUILang.countryName		= "Land";
 
  theUILang.country = new Array();

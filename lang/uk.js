@@ -8,9 +8,6 @@
  * Author: Oleksandr Natalenko (pfactum@gmail.com)
  */
 
- theUILang.peerComment 		= "Додати коментар";
- theUILang.peerCommentLabel	= "Уведіть новий коментар для вузла";
- theUILang.commentName		= "Коментар";
  theUILang.countryName		= "Країна";
 
  theUILang.country = new Array();

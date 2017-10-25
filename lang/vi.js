@@ -8,9 +8,6 @@
  * Author: Ta Xuan Truong (truongtx8 AT gmail DOT com)
  */
 
- theUILang.peerComment 		= "Thêm ghi chú";
- theUILang.peerCommentLabel	= "Điền ghi chú mới cho địa chỉ";
- theUILang.commentName		= "Ghi chú";
  theUILang.countryName		= "Quốc Gia";
 
  theUILang.country = new Array();
