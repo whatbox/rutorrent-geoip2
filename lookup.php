@@ -1,7 +1,13 @@
 <?php
 header('Content-type: application/json');
 
-require(__DIR__ . "/vendor/autoload.php");
+if (is_file(__DIR__ . "/vendor/autoload.php")) {
+        // Dependencies installed via composer
+        require(__DIR__ . "/vendor/autoload.php");
+} elseif (is_file('/usr/share/php/GeoIP2/autoload.php')) {
+        // Dependencies installed via Fedora autoloader
+        require('/usr/share/php/GeoIP2/autoload.php');
+}
 
 use GeoIp2\Database\Reader AS GeoIP2;
 
