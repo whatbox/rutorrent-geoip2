@@ -2,5 +2,5 @@ plugin.description: This plugin shows geolocation of peers for the selected torr
 plugin.author: Zoltan Csala,Novik
 plugin.runlevel: 15
 plugin.version: 3.6
-php.extensions.error: json
+php.extensions.error: json, maxminddb
 plugin.help: http://code.google.com/p/rutorrent/wiki/PluginGeoIP
