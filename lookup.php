@@ -15,7 +15,7 @@ if (is_file(__DIR__ . "/vendor/autoload.php")) {
     exit;
 }
 
-use GeoIp2\Database\Reader AS GeoIP2;
+use GeoIp2\Database\Reader as GeoIP2;
 
 $Return = [];
 
