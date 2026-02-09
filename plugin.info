@@ -1,4 +1,4 @@
-plugin.description: Country flag for peers. IP address data powered by IPLocate.io
+plugin.description: Country flag for peers. IP Geolocation by DB-IP.com
 plugin.author: Whatbox
 plugin.runlevel: 15
 plugin.version: 3.6

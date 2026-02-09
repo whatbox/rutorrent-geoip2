@@ -12,7 +12,7 @@ if (is_file(__DIR__ . "/vendor/autoload.php")) {
     $jResult .= "plugin.disable();";
 }
 
-if (!class_exists("MaxMind\Db\Reader")) {
+if (!class_exists("GeoIp2\Database\Reader")) {
     $jResult .= "plugin.disable();";
 }
 

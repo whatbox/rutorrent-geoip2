@@ -9,10 +9,10 @@ var thePeersCache =
 
 	add: function( data )
 	{
-		for( var i = 0; i< data.length; i++ )
+		for( var ip in data )
 		{
-			this.ips.push(data[i].ip);
-			this.info[data[i].ip] = data[i].info;
+			this.ips.push(ip);
+			this.info[ip] = data[ip];
 		}
 	},
 
@@ -35,12 +35,12 @@ var thePeersCache =
 	{
 		if(!peer.processed)
 		{
-			var info = this.get(peer.ip);
-			if(info)
+			var country = this.get(peer.ip);
+			if(country)
 			{
 				peer.processed = true;
-				peer.country = info.country;
-				peer.icon = "geoip geoip_flag_"+peer.country.substr(0,2);
+				peer.country = country;
+				peer.icon = "geoip geoip_flag_"+country.substr(0,2);
 			}
 		}
 		return(peer.processed);
