@@ -15,18 +15,27 @@ if (is_file(__DIR__ . "/vendor/autoload.php")) {
     exit;
 }
 
-use GeoIp2\Database\Reader as GeoIP2;
+// Using IPLocate.io free databases (CC BY-SA 4.0) instead of MaxMind GeoLite
+// which changed to restrictive licensing in 2019
+// https://github.com/iplocate/ip-address-databases
+$Reader = new MaxMind\Db\Reader('/usr/share/GeoIP/ip-to-country.mmdb');
 
 $Return = [];
-
-$GeoIP2 = new GeoIP2('/usr/share/GeoIP/GeoLite2-Country.mmdb');
-
 if (isset($_POST['ip']) && is_array($_POST['ip'])) {
     foreach ($_POST['ip'] as $IP) {
-        try {
-            $Return[] = ['ip' => $IP, 'info' => ['country' => strtolower($GeoIP2->country($IP)->country->isoCode), 'host' => $IP]];
-        } catch (Exception $e) {
+        /**
+         * @var ?array{
+         *     continent_code: string,
+         *     country_code: string,
+         *     country_name: string,
+         * } $record
+         */
+        $record = $Reader->get($IP);
+
+        if ($record === null) {
             $Return[] = ['ip' => $IP, 'info' => ['country' => 'un', 'host' => $IP]];
+        } else {
+            $Return[] = ['ip' => $IP, 'info' => ['country' => strtolower($record['country_code']), 'host' => $IP]];
         }
     }
 }

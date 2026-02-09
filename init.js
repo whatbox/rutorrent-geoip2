@@ -26,12 +26,6 @@ var thePeersCache =
 		}
 	},
 
-	update: function( ip, comment )
-	{
-		if(this.get(ip))
-			this.info[ip].comment = comment;
-	},
-
 	get: function( ip )
 	{
 		return( $type(this.info[ip]) ? this.info[ip] : null );
@@ -39,15 +33,14 @@ var thePeersCache =
 
 	fill: function(peer)
 	{
-	        if(!peer.processed)
-	        {
-	                var info = this.get(peer.ip);
-	                if(info)
-        	        {
-                	        peer.processed = true;
+		if(!peer.processed)
+		{
+			var info = this.get(peer.ip);
+			if(info)
+			{
+				peer.processed = true;
 				peer.country = info.country;
 				peer.icon = "geoip geoip_flag_"+peer.country.substr(0,2);
-				peer.name = info.host;
 			}
 		}
 		return(peer.processed);
@@ -134,7 +127,6 @@ if(plugin.canChangeColumns())
 		{
 			var table = theWebUI.getTable("prs");
 			table.renameColumnById("country",theUILang.countryName);
-			table.renameColumnById("comment",theUILang.commentName);
 			table.oldFilesSortAlphaNumeric = table.sortAlphaNumeric;
 			table.sortAlphaNumeric = function(x, y) 
 			{

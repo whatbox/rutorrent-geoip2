@@ -232,7 +232,7 @@
  theUILang.country[ "tm" ] = "Turkmenistāna";
  theUILang.country[ "tn" ] = "Tunisija";
  theUILang.country[ "to" ] = "Tonga";
- theUILang.country[ "tr" ] = "Turcija",
+ theUILang.country[ "tr" ] = "Turcija";
  theUILang.country[ "tp" ] = "Portugāļu Timora";
  theUILang.country[ "tt" ] = "Trinidāda un Tobāgo";
  theUILang.country[ "tv" ] = "Tuvalu";

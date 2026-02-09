@@ -6,7 +6,6 @@
 .geoip_flag_ai {background-image: url( "flags/ai.gif" ); }
 .geoip_flag_al {background-image: url( "flags/al.gif" ); }
 .geoip_flag_am {background-image: url( "flags/am.gif" ); }
-.geoip_flag_an {background-image: url( "flags/an.gif" ); }
 .geoip_flag_ao {background-image: url( "flags/ao.gif" ); }
 .geoip_flag_aq {background-image: url( "flags/aq.gif" ); }
 .geoip_flag_ar {background-image: url( "flags/ar.gif" ); }
@@ -220,7 +219,6 @@
 .geoip_flag_tm {background-image: url( "flags/tm.gif" ); }
 .geoip_flag_tn {background-image: url( "flags/tn.gif" ); }
 .geoip_flag_to {background-image: url( "flags/to.gif" ); }
-.geoip_flag_tp {background-image: url( "flags/tp.gif" ); }
 .geoip_flag_tr {background-image: url( "flags/tr.gif" ); }
 .geoip_flag_tt {background-image: url( "flags/tt.gif" ); }
 .geoip_flag_tv {background-image: url( "flags/tv.gif" ); }
@@ -249,8 +247,26 @@
 .geoip_flag_zm {background-image: url( "flags/zm.gif" ); }
 .geoip_flag_zw {background-image: url( "flags/zw.gif" ); }
 
-div#cadd {width: 250px; height: 120px}
-div#cadd div.dlg-header {background-image: url(../../../images/props.gif)}
-div#cadd div.content {width: 230px; margin: 5px; padding: 5px; line-height: 16px}
-div#cadd div.content input {margin-top: 5px}
-#peerComment {width: 200px}
+div#cadd {
+    width: 250px;
+    height: 120px
+}
+
+div#cadd div.dlg-header {
+    background-image: url(../../../images/props.gif)
+}
+
+div#cadd div.content {
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
+    line-height: 16px
+}
+
+div#cadd div.content input {
+    margin-top: 5px
+}
+
+#peerComment {
+    width: 200px
+}
